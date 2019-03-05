@@ -1,0 +1,14 @@
+She is stunning. She could be the most beautiful woman you have ever seen in your whole life and the unbelievable thing is that she is completely into you. She starts a small talk with you and even laughs at your silly jokes. 
+
+On the other hand, your date doesn't look very happy, she gives you a horrible look and walks out of the bar looking very angry. Well, you made your decision and this woman caught you like a magnet, it's not fault that she is gorgeous, is it? 
+
+She starts getting intimate with you and ask you to go to her place. 
+
+Do you go to her place?
+
+       Yes           No
+        |            |
+        V            V
+
+
+

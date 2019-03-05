@@ -1,0 +1,12 @@
+He starts speaking about himself. Tells you that he is an American travelling around the world, working for a whiskey company and his job is to promote their business. But you sense that there is something wrong with his story. Yet he has a certain allurement. 
+
+He tells you that it is late and he wants to meet you tomorrow if you like. 
+
+Would you like to give your number to him?
+
+       Yes           No
+        |            |
+        V            V
+
+
+

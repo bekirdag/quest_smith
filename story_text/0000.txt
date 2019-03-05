@@ -1,0 +1,10 @@
+Your date starts to get intimate with another guy and you can see them from a distance. You don't feel like making a scene really, you are not tht interested in her anyways. 
+
+Would you like to go to another bar alone or would you like to go back home without your date?
+
+
+     Go Home    Walk outside 
+        |            |
+        V            V
+
+

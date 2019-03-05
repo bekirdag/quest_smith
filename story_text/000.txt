@@ -1,0 +1,12 @@
+She enjoys herself anyways and continue dancing. She starts singing with a group of people, slowly she moves to the other side of the crowd and starts dancing with another guy. While you are trying to figure out what's happening, a guy approaches you and asks you where you are from. 
+            
+Would you like to be friendly with him and start a conversation?
+            
+       Yes           No
+        |            |
+        V            V
+
+
+
+            
+            

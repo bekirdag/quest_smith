@@ -1,0 +1,11 @@
+Well, that wasn't your thing anyways and you have a beautiful date tonight. After your date hears a song, just like all the other Croatians, she starts to dance and asks you to join her.
+
+
+Do you dance with her?
+
+       Yes           No
+        |            |
+        V            V
+
+
+

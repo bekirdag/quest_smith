@@ -1,0 +1,10 @@
+You are in a bar with friends in Zagreb, the atmosphere is just like how you imagined it. Live balkan music, a beautiful happy crowd just enjoying the music and each-other's company. Suddenly you mention that you can sing a Croatian song. Your friends are amazed and one of them asks you to go to the stage and sing.
+
+Do you got to the stage?
+
+       Yes           No
+        |            |
+        V            V
+
+
+

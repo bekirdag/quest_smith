@@ -1,0 +1,10 @@
+She is a beutiful woman, as you dance, you start falling into her. Her beautiful eyes catches your gazing and you see her smiling. It's getting late and she tells you that she wants to go home. 
+             
+Would you like to offer her to go to your place? 
+
+       Yes           No
+        |            |
+        V            V
+
+
+
