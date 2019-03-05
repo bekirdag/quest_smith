@@ -1,6 +1,6 @@
 Quest Smith is a Raspberry Pi Zero driven thermal printing text based game. In each level, it gives you options to choose so every game is different than the other one depending on your choices.
 
-##Parts list:
+## Parts list:
 
 1 Raspberry Pi Zero
 1 Thermal printer, I used GOOJPRT (https://bit.ly/2H0mE9l) 
@@ -16,23 +16,23 @@ Cables
 4 Screws 3.5 X 20 mm
 1 On off swicth (https://bit.ly/2C4Zs5Z)
 
-##Tools I used:
+## Tools I used:
 * Glue Gun 
 * Soldering iron
 
-##The sketch:
+## The sketch:
 https://bekirdag.com/random_files/sketch.png
 
-##Pictures
+## Pictures
 https://bekirdag.com/random_files/quest_smith1.jpg
 https://bekirdag.com/random_files/quest_smith2.jpg
 https://bekirdag.com/random_files/quest_smith3.jpg
 
 
-###Putting everything together
+### Putting everything together
 Well after you solder the wires as it shown in the sketch picture above, you need to fit the hardware in the empty space left from the thermal printer in the box. The only tip I can give you would be to use a short usb cable to save from the space, glue the thermal pinter and the buttons, after you put everything together glue the swicth button to the hole as well. I used a Solar panel to charge the battery, so you will need to glue the solar panel to the case when you complete eveyrthing else.
 
-###Coding:
+### Coding:
 
 1. Download and install raspbian OS from here https://www.raspberrypi.org/downloads/raspbian/
 2. Update packages:
