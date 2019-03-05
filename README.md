@@ -2,19 +2,19 @@ Quest Smith is a Raspberry Pi Zero driven thermal printing text based game. In e
 
 ## Parts list:
 
-1 Raspberry Pi Zero
-1 Thermal printer, I used GOOJPRT (https://bit.ly/2H0mE9l) 
-1 5V Voltage Step-up Boost Module (https://bit.ly/2SOJ13i)
-1 TP4056 (https://bit.ly/2EQ2gWp)
-1 18650 battery (https://bit.ly/2SM6QZk)
-2 Momentary Tactile Switches (https://bit.ly/2TlT4BN)
-Cables
-1 3D printed case top
-1 3D printed case bottom
-1 Micro usb to usb female cable (https://bit.ly/2EzYsqP)
-1 Usb cable (this should come with the thermal printer)
-4 Screws 3.5 X 20 mm
-1 On off swicth (https://bit.ly/2C4Zs5Z)
+* 1 Raspberry Pi Zero
+* 1 Thermal printer, I used GOOJPRT (https://bit.ly/2H0mE9l) 
+* 1 5V Voltage Step-up Boost Module (https://bit.ly/2SOJ13i)
+* 1 TP4056 (https://bit.ly/2EQ2gWp)
+* 1 18650 battery (https://bit.ly/2SM6QZk)
+* 2 Momentary Tactile Switches (https://bit.ly/2TlT4BN)
+* 1 3D printed case top
+* 1 3D printed case bottom
+* 1 Micro usb to usb female cable (https://bit.ly/2EzYsqP)
+* 1 Usb cable (this should come with the thermal printer)
+* 4 Screws 3.5 X 20 mm
+* 1 On off swicth (https://bit.ly/2C4Zs5Z)
+* Cables
 
 ## Tools I used:
 * Glue Gun 
