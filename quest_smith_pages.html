@@ -1,8 +1,57 @@
 <html>
 <head>
 <script type='text/javascript' src="quest_smith_pages.js" ></script>
+<style>
+    h1 {
+        text-align:'middle';
+    }
+    .quest {
+        background-color: yellow;
+    }
+    .quest_text {
+        background-color: lightblue;
+    }
+    .quest_buttons {
+        background-color: pink;
+    }
+    .button {
+        background-color: blue;
+        border: 0;
+            line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(220, 0, 0, 1);
+        background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .button:hover {
+        background-color: rgba(255, 0, 0, 1);
+    }
+
+    .button:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+
+</style>
 </head>
 <body>
-Hello! I am an HTML file to be hosted on Github Pages
+<h1>Quest Smith Online</h1>
+<div class="quest">
+    <div class="quest_text">Loading...</div>
+    <div class="quest_buttons">
+        <button class="button">Yes</button>
+        <button class="button">No</button>
+    </div>
+</div>
 </body>
 </html>
