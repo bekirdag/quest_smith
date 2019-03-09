@@ -86,6 +86,6 @@ The story is under the story_text folder as txt files like:
     00.txt (when the user choses -NO- at the beginning)
     01.txt (when the user choses -YES- at the beginning)
     001.txt (when the user choses -NO- and then -YES- respectively)
-    010.txt (when the user choses -YESY- and then -NO- respectively)
+    010.txt (when the user choses -YES- and then -NO- respectively)
     
     And so on. So as you can see, for no, put a 0, for yes, put a 1 at the and of your story option file name.
