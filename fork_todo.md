@@ -11,3 +11,4 @@ Stage one will be testing github pages
 * [x]  remove hello world and other extranious files
 * [x]  put css in separate file
 * [x]  clean up file structure
+* [ ]  complete README.md in web folder
