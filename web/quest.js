@@ -23,6 +23,7 @@ function OnlineQuestSmith(buttonYes, buttonNo, divText) {
     // captures 404
     this.formatOutput = function(text) {
        if (/>404</.test(text)) {
+           quest.lockButtons(true);
            return storyContinues;
        }
        formatedText = text.replace(/\n/g,"<br /><br />");
