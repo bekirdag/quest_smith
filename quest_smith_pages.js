@@ -47,8 +47,8 @@ function OnlineQuestSmith(buttonYes, buttonNo, divText) {
     }
 
     this.init = function() {
-        document.querySelector(quest.buttonYes).onclick = function() { takePath("1");};
-        document.querySelector(quest.buttonNo).onclick = function() { takePath("0");};
+        document.querySelector(quest.buttonYes).onclick = function() { quest.takePath("1");};
+        document.querySelector(quest.buttonNo).onclick = function() { quest.takePath("0");};
     }
 
     quest.init();
