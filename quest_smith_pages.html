@@ -5,29 +5,41 @@
     body {
         text-align:center;
     }
+    
+    h1 {
+        bckground-color:black;
+	color:white;
+    }
     .quest {
-        background-color: yellow;
+        background-color: rgb(255,250,110);;
         text-align:center;
     }
     .quest_text {
-        background-color: lightblue;
+	background: linear-gradient(#ffffff, #e0e0e0);
         width: 26em;
         margin: auto;
+	padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+	border-left: solid gray;
+	border-right: solid black;
     }
     .quest_buttons {
-        background-color: pink;
+        margin: 1em;
+        padding-bottom: 1em;
     }
     .button {
+        margin: 0em 2.5em 0em 2.5em;
         background-color: blue;
         border: 0;
             line-height: 2.5;
         padding: 0 20px;
         font-size: 1rem;
-        text-align: center;
-        color: #fff;
-        text-shadow: 1px 1px 1px #000;
+	text-align: center;
+        color: #000;
+        text-shadow: 1px 1px 1px #fff;
         border-radius: 10px;
-        background-color: rgba(220, 0, 0, 1);
+        background-color: rgba(220, 220, 155, 1);
         background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -37,7 +49,7 @@
     }
 
     .button:hover {
-        background-color: rgba(255, 0, 0, 1);
+	background-color: rgba(255, 255, 200, 1);
     }
 
     .button:active {
@@ -63,7 +75,7 @@
 </div>
 <script type='text/javascript'>//<![CDATA[
     init();
-    takePath(pathTaken);
+    takePath("0");
 </script>
 </body>
 </html>
