@@ -2,12 +2,12 @@
 <head>
 <script type='text/javascript' src="quest_smith_pages.js" ></script>
 <style>
-    h1 {
-        text-align:'center';
+    body {
+        text-align:center;
     }
     .quest {
         background-color: yellow;
-        text-align:'center';
+        text-align:center;
     }
     .quest_text {
         background-color: lightblue;
@@ -43,6 +43,11 @@
     .button:active {
         box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+    .button:disabled {
+        background-color: lightgray;
+        border-radius: 0;
+        color: gray;
     }
 
 </style>

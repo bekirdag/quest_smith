@@ -16,14 +16,26 @@ function formatOutput(text) {
    return formatedText;
 }
 
+// Disable the "choice" buttons true|false
+function lockButtons(lock) {
+    document.querySelector(".button.yes").disabled = lock;
+    document.querySelector(".button.no").disabled = lock;
+}
+
 function takePath(pathTaken) {
+    lockButtons(true);
     updateText(loadingText);
     xhr.open("GET", pathToPages + pathTaken + ".txt");
     xhr.onload = function(){
         //console.log(xhr.responseText);
         updateText(formatOutput(xhr.responseText));
+        lockButtons(false);
     }
     xhr.send();
 }
 
+function init() {
+    document.querySelector(".button.yes").onclick = function() { takePath(pathTaken+"0");};
+    document.querySelector(".button.no").onclick = function() { takePath(pathTaken+"1");};
+}
 
