@@ -1,48 +1,56 @@
-console.log("coming to you live from Github Pages");
+function OnlineQuestSmith(buttonYes, buttonNo, divText) {
+    var quest = this; // context
+    // settings
+    quest.buttonYes = buttonYes;
+    quest.buttonNo  = buttonNo;
+    quest.divText   = divText;
+    //internal
+    var pathTaken = "";
+    var xhr = new XMLHttpRequest();
+    var loadingText = "Loading...";
+    var pathToPages = "https://robgithub.github.io/quest_smith/story_text/";
+    var homerepo = "https://github.com/bekirdag/quest_smith";
+    var storyContinues = "<h2 class=\"quest404\">The Story Continues</h2><p class=\"quest404\">This part of the tale is not yet written. Take control and compose one of the many branches for the Quest Smith adventure at <a href=\"" + homerepo + "\">Quest Smith</a></p><p class=\"quest404\">You do not need to be a coder, just edit the text files</p><br /><br />Refresh this page to start again<br /><br />";
 
-var pathTaken = "";
-var xhr = new XMLHttpRequest();
-var loadingText = "Loading...";
-var pathToPages = "https://robgithub.github.io/quest_smith/story_text/";
-var homerepo = "https://github.com/bekirdag/quest_smith";
-var storyContinues = "<h2 class=\"quest404\">The Story Continues</h2><p class=\"quest404\">This part of the tale is not yet written. Take control and compose one of the many branches for the Quest Smith adventure at <a href=\"" + homerepo + "\">Quest Smith</a></p><p class=\"quest404\">You do not need to be a coder, just edit the text files</p><br /><br />";
-
-function updateText(text) {
-    document.querySelector(".quest_text").innerHTML = text;
-}
-
-// Converts the plain text to HTML with line breaks and removes the "choice" lines
-// captures 404
-function formatOutput(text) {
-   if (/>404</.test(text)) {
-       return storyContinues;
-   }
-   formatedText = text.replace(/\n/g,"<br /><br />");
-   formatedText = formatedText.replace(/<br( \/)?> +Yes.*$/,"");
-   return formatedText;
-}
-
-// Disable the "choice" buttons true|false
-function lockButtons(lock) {
-    document.querySelector(".button.yes").disabled = lock;
-    document.querySelector(".button.no").disabled = lock;
-}
-
-function takePath(newPathTaken) {
-    pathTaken+=newPathTaken;
-    lockButtons(true);
-    updateText(loadingText);
-    xhr.open("GET", pathToPages + pathTaken + ".txt");
-    xhr.onload = function(){
-        //console.log(xhr.responseText);
-        updateText(formatOutput(xhr.responseText));
-        lockButtons(false);
+    this.updateText = function(text) {
+        document.querySelector(quest.divText).innerHTML = text;
     }
-    xhr.send();
-}
 
-function init() {
-    document.querySelector(".button.yes").onclick = function() { takePath("1");};
-    document.querySelector(".button.no").onclick = function() { takePath("0");};
-}
+    // Converts the plain text to HTML with line breaks and removes the "choice" lines
+    // captures 404
+    this.formatOutput = function(text) {
+       if (/>404</.test(text)) {
+           return storyContinues;
+       }
+       formatedText = text.replace(/\n/g,"<br /><br />");
+       formatedText = formatedText.replace(/<br( \/)?> +Yes.*$/,"");
+       return formatedText;
+    }
 
+    // Disable the "choice" buttons true|false
+    this.lockButtons = function(lock) {
+        document.querySelector(quest.buttonYes).disabled = lock;
+        document.querySelector(quest.buttonNo).disabled = lock;
+    }
+
+    this.takePath = function(newPathTaken) {
+        pathTaken+=newPathTaken;
+        lockButtons(true);
+        updateText(loadingText);
+        xhr.open("GET", pathToPages + pathTaken + ".txt");
+        xhr.onload = function(){
+            //console.log(xhr.responseText);
+            updateText(formatOutput(xhr.responseText));
+            lockButtons(false);
+        }
+        xhr.send();
+    }
+
+    this.init = function() {
+        document.querySelector(quest.buttonYes).onclick = function() { takePath("1");};
+        document.querySelector(quest.buttonNo).onclick = function() { takePath("0");};
+    }
+
+    quest.init();
+
+} // end of OnlineQuestSmith class

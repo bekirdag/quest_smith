@@ -8,6 +8,5 @@ Stage one will be testing github pages
 * [x]  read and display page 1, in page
 * [x]  add functionality to play game
 * [ ]  remove hello world and other extranious files
-* [ ]  create javascript back functionality
 * [ ]  put css in separate file
 * [ ]  clean up file structure
