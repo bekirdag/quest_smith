@@ -34,14 +34,14 @@ function OnlineQuestSmith(buttonYes, buttonNo, divText) {
     }
 
     this.takePath = function(newPathTaken) {
-        pathTaken+=newPathTaken;
-        lockButtons(true);
-        updateText(loadingText);
+        pathTaken += newPathTaken;
+        quest.lockButtons(true);
+        quest.updateText(loadingText);
         xhr.open("GET", pathToPages + pathTaken + ".txt");
         xhr.onload = function(){
             //console.log(xhr.responseText);
-            updateText(formatOutput(xhr.responseText));
-            lockButtons(false);
+            quest.updateText(quest.formatOutput(xhr.responseText));
+            quest.lockButtons(false);
         }
         xhr.send();
     }
