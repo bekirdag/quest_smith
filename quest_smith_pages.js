@@ -5,7 +5,7 @@ var xhr = new XMLHttpRequest();
 var loadingText = "Loading...";
 var pathToPages = "https://robgithub.github.io/quest_smith/story_text/";
 var homerepo = "https://github.com/bekirdag/quest_smith";
-var storyContinues = "<h2 class=\"quest404\">The Story Continues</h2><p class=\"quest404\">This part of the tale is not yet written. Take control and compose one of the many branches for the Quest Smith adventure at <a href=\"" + homerepo + "\">Quest Smith</a></p><p class=\"quest404\">You do not need to be a coder, just edit the text files</p>";
+var storyContinues = "<h2 class=\"quest404\">The Story Continues</h2><p class=\"quest404\">This part of the tale is not yet written. Take control and compose one of the many branches for the Quest Smith adventure at <a href=\"" + homerepo + "\">Quest Smith</a></p><p class=\"quest404\">You do not need to be a coder, just edit the text files</p><br /><br />";
 
 function updateText(text) {
     document.querySelector(".quest_text").innerHTML = text;
