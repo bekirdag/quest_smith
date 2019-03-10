@@ -5,6 +5,9 @@ Stage one will be testing github pages
 * [x]  hello world javascript
 * [x]  test story files are accessable in Github Pages
 * [x]  read and display page 1, in console
-* [ ]  read and display page 1, in page
-* [ ]  add functionality to play game
+* [x]  read and display page 1, in page
+* [x]  add functionality to play game
 * [ ]  remove hello world and other extranious files
+* [ ]  create javascript back functionality
+* [ ]  put css in separate file
+* [ ]  clean up file structure

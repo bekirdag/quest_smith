@@ -3,7 +3,7 @@ console.log("coming to you live from Github Pages");
 var pathTaken = "";
 var xhr = new XMLHttpRequest();
 var loadingText = "Loading...";
-var pathToPages = "https://robgithub.github.io/quest_smith/story_text/0";
+var pathToPages = "https://robgithub.github.io/quest_smith/story_text/";
 
 function updateText(text) {
     document.querySelector(".quest_text").innerHTML = text;
@@ -22,7 +22,8 @@ function lockButtons(lock) {
     document.querySelector(".button.no").disabled = lock;
 }
 
-function takePath(pathTaken) {
+function takePath(newPathTaken) {
+    pathTaken+=newPathTaken;
     lockButtons(true);
     updateText(loadingText);
     xhr.open("GET", pathToPages + pathTaken + ".txt");
@@ -35,7 +36,7 @@ function takePath(pathTaken) {
 }
 
 function init() {
-    document.querySelector(".button.yes").onclick = function() { takePath(pathTaken+"0");};
-    document.querySelector(".button.no").onclick = function() { takePath(pathTaken+"1");};
+    document.querySelector(".button.yes").onclick = function() { takePath("1");};
+    document.querySelector(".button.no").onclick = function() { takePath("0");};
 }
 
