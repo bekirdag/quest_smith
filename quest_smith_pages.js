@@ -6,7 +6,7 @@ var loadingText = "Loading...";
 var pathToPages = "https://robgithub.github.io/quest_smith/story_text/0";
 
 function updateText(text) {
-    document.querySelector(".quest_text").innerHTML(text);
+    document.querySelector(".quest_text").innerHTML = text;
 }
 
 function takePath(pathTaken) {
