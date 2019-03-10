@@ -14,7 +14,7 @@ function updateText(text) {
 // Converts the plain text to HTML with line breaks and removes the "choice" lines
 // captures 404
 function formatOutput(text) {
-   if (/>404</) {
+   if (/>404</.test(text)) {
        return storyContinues;
    }
    formatedText = text.replace(/\n/g,"<br /><br />");
