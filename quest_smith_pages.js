@@ -5,11 +5,11 @@ var xhr = new XMLHttpRequest();
 var loadingText = "Loading...";
 var pathToPages = "https://robgithub.github.io/quest_smith/story_text/0";
 
-updateText(text) {
+function updateText(text) {
     document.querySelector(".quest_text").innerHTML(text);
 }
 
-takePath(pathTaken) {
+function takePath(pathTaken) {
     updateText(loadingText);
     xhr.open("GET", pathToPages + pathTaken + ".txt");
     xhr.onload = function(){
