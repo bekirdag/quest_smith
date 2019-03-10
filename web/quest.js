@@ -45,8 +45,8 @@ function OnlineQuestSmith(buttonYes, buttonNo, divText) {
         xhr.open("GET", pathToPages + pathTaken + ".txt");
         xhr.onload = function(){
             //console.log(xhr.responseText);
-            quest.updateText(quest.formatOutput(xhr.responseText));
             quest.lockButtons(false);
+            quest.updateText(quest.formatOutput(xhr.responseText));
         }
         xhr.send();
     }
