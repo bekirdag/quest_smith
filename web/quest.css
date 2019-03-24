@@ -5,6 +5,7 @@ h1 {
     background-color:black;
 	color:white;
 }
+
 .quest404 {
     color:#923f3f;
     font-style:italic;
@@ -14,8 +15,8 @@ h1 {
     text-align:center;
 }
 .quest_text {
-	background: linear-gradient(#ffffff, #e0e0e0);
-    width: 26em;
+    background: linear-gradient(#ffffff, #e0e0e0);
+    width: 33%;
     margin: auto;
 	padding-top: 1em;
     padding-left: 1em;
@@ -24,17 +25,17 @@ h1 {
 	border-right: solid black;
 }
 .quest_buttons {
-    margin: 1em;
+    margin: auto;
     padding-bottom: 1em;
+    width: 36%;
 }
 .button {
-    margin: 0em 2.5em 0em 2.5em;
-    background-color: blue;
+    width:49%;
+    height:2em;
     border: 0;
-        line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-	text-align: center;
+    line-height: 2.5;
+    font-size: 7em;
+    text-align: center;
     color: #000;
     text-shadow: 1px 1px 1px #fff;
     border-radius: 10px;
@@ -57,4 +58,9 @@ h1 {
     background-color: lightgray;
     border-radius: 0;
     color: gray;
+}
+@media screen and (orientation: portrait) {
+    .quest_text, .quest_buttons {
+        width:96%;
+    }
 }
