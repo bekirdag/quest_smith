@@ -1,0 +1,66 @@
+body {
+    text-align:center;
+}
+h1 {
+    background-color:black;
+	color:white;
+}
+
+.quest404 {
+    color:#923f3f;
+    font-style:italic;
+}
+.quest {
+    background-color: rgb(255,250,110);;
+    text-align:center;
+}
+.quest_text {
+    background: linear-gradient(#ffffff, #e0e0e0);
+    width: 33%;
+    margin: auto;
+	padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+	border-left: solid gray;
+	border-right: solid black;
+}
+.quest_buttons {
+    margin: auto;
+    padding-bottom: 1em;
+    width: 36%;
+}
+.button {
+    width:49%;
+    height:2em;
+    border: 0;
+    line-height: 2.5;
+    font-size: 7em;
+    text-align: center;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+    border-radius: 10px;
+    background-color: rgba(220, 220, 155, 1);
+    background-image: linear-gradient(to top left,
+                                  rgba(0, 0, 0, .2),
+                                  rgba(0, 0, 0, .2) 30%,
+                                  rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.button:hover {
+	background-color: rgba(255, 255, 200, 1);
+}
+.button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.button:disabled {
+    background-color: lightgray;
+    border-radius: 0;
+    color: gray;
+}
+@media screen and (orientation: portrait) {
+    .quest_text, .quest_buttons {
+        width:96%;
+    }
+}
