@@ -6,6 +6,7 @@ function OnlineQuestSmith(pathToPages, buttonYes, buttonNo, divText) {
     quest.buttonYes = buttonYes;
     quest.buttonNo  = buttonNo;
     quest.divText   = divText;
+    quest.pathToPages = pathToPages;
     //internal
     var pathTaken = "";
     var xhr = new XMLHttpRequest();
@@ -41,7 +42,7 @@ function OnlineQuestSmith(pathToPages, buttonYes, buttonNo, divText) {
         pathTaken += newPathTaken;
         quest.lockButtons(true);
         quest.updateText(loadingText);
-        xhr.open("GET", pathToPages + pathTaken + ".txt");
+        xhr.open("GET", quest.pathToPages + pathTaken + ".txt");
         xhr.onload = function(){
             //console.log(xhr.responseText);
             quest.lockButtons(false);
