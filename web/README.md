@@ -7,3 +7,10 @@ In GitHub goto the settings of the repo and enable Pages(all)
 
 now vist
 https://github.com/bekirdag/quest_smith/web/quest.html
+
+
+Mobile compatibility
+
+Media queries to fix layout for Portrait devices
+Bigger click targets and text
+
